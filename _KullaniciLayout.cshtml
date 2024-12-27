@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Örnek Header</title>
+    <style>
+        /* Temel stiller */
+        body {
+            font-family: sans-serif; /* Yazı tipi */
+            margin: 0; /* Sayfa kenar boşluklarını kaldır */
+        }
+
+        header {
+            display: flex; /* Yatay hizalama için flexbox */
+            justify-content: space-between; /* Öğeleri yatayda dağıt */
+            align-items: center; /* Öğeleri dikeyde ortala */
+            background-color: #a7d1ab; /* Açık yeşil arka plan */
+            padding: 20px; /* İç boşluk */
+        }
+
+        .logo {
+            /* Logo stilleri (burada bir metin logo kullandım) */
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff; /* Beyaz logo rengi */
+        }
+
+        nav ul {
+            list-style: none; /* Liste işaretlerini kaldır */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Menü öğelerini yatay hizala */
+        }
+
+        nav li {
+            margin-left: 20px; /* Menü öğeleri arasında boşluk */
+        }
+
+        nav a {
+            text-decoration: none; /* Bağlantı alt çizgilerini kaldır */
+            color: #fff; /* Beyaz metin rengi */
+        }
+
+        .right-section {
+            background-color: #c47171;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+            .right-section a {
+                text-decoration: none; /* Bağlantı alt çizgilerini kaldır */
+                color: #fff; /* Beyaz metin rengi */
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Kolay Randevu</div>
+        <nav>
+            <ul>
+                <li><a href="#">Salonlar</a></li>
+                <li><a href="#">Saç</a></li>
+                <li><a href="#">Tırnak</a></li>
+                <li><a href="#">Makyaj</a></li>
+                <li><a href="#">Solaryum</a></li>
+                <li><a href="#">Ajda (Bölgesel)</a></li>
+                <li><a href="#">Lazer Epilasyon</a></li>
+                <li><a href="/Kullanici/Index">Randevu Al</a></li>
+
+            </ul>
+        </nav>
+        <div class="w3-container">
+            @RenderBody()
+        </div>
+    </header>
+
+</body>
+</html>
